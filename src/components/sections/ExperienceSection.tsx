@@ -4,30 +4,38 @@ export default function ExperienceSection() {
   const experiences: experienceType[] = [
     {
       id: 1,
-
-      title: "System Analyst",
+      title: "Frontend Developer",
       company: "OnDemand Innovation, LLC",
-      period: "January 2025 - Present ",
+      period: "Oct. 2025 – Present",
       description:
-        " Collaborating with stakeholders to gather requirements and analyze system needs for various projects.",
+        "Developed and maintained front-end interfaces using React.js, Next.js, TypeScript, and Tailwind CSS. Collaborated with cross-functional teams to translate UI/UX designs into responsive, production-ready code. Implemented reusable component libraries to improve development efficiency and code consistency.",
       location: "Remote",
     },
     {
       id: 2,
-      title: "Quality Assurance Tester (Part-time)",
+      title: "Business Analyst",
       company: "OnDemand Innovation, LLC",
-      period: "July - September 2024",
+      period: "Jan. 2025 – Present",
       description:
-        " Worked alongside QA teams on multiple projects to ensure software met quality standards.",
+        "Gathered and documented business requirements through stakeholder interviews and workflow analysis. Created detailed functional specifications, user stories, and process flow diagrams. Bridged communication between technical teams and business stakeholders to ensure alignment on deliverables.",
       location: "Remote",
     },
     {
       id: 3,
-      title: "StudentIntern",
+      title: "Quality Assurance Tester (Part-time)",
       company: "OnDemand Innovation, LLC",
-      period: "Feb 24 - May 2024",
+      period: "2024",
       description:
-        " Contributed to building key frontend pages to some System Projects",
+        "Performed manual and regression testing to identify defects and ensure software quality standards. Documented test cases, bug reports, and testing procedures for the QA team. Collaborated with developers to verify bug fixes and validate feature implementations.",
+      location: "Remote",
+    },
+    {
+      id: 4,
+      title: "Student Intern – Front End Development",
+      company: "OnDemand Innovation, LLC",
+      period: "2024",
+      description:
+        "Assisted in building front-end components and UI features under the guidance of senior developers. Gained hands-on experience with modern JavaScript frameworks and version control workflows.",
       location: "Remote",
     },
   ];

@@ -21,8 +21,8 @@ export default function AboutSection() {
             </p>
             <Button size="lg" asChild>
               <a
-                href="/Viernes__Josiah__Resume.pdf"
-                download="Josiah_Viernes_Resume.pdf"
+                href="/Josiah_CV.pdf"
+                download="Josiah_Viernes_CV.pdf"
               >
                 <GoDownload /> Download CV
               </a>
