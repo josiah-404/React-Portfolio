@@ -10,6 +10,7 @@ export default function AboutSection() {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16 md:py-0">
         <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
+          <ProfileImageComponent />
           <div className="text-center md:text-left">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-foreground mb-8 font-montserrat tracking-tight">
               About Me
@@ -28,7 +29,6 @@ export default function AboutSection() {
               </a>
             </Button>
           </div>
-          <ProfileImageComponent />
         </div>
       </div>
     </section>

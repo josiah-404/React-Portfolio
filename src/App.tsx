@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 export const App = () => {
   return (
     <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
-      <div className="min-h-screen bg-gray-50">
+      <div className="min-h-screen bg-background">
         <Navigation />
 
         <main className="pt-14 pb-20 lg:pt-0 lg:pb-0">

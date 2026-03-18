@@ -13,7 +13,7 @@ const TechStackSection = () => {
         <p className="text-lg text-muted-foreground mb-8 font-poppins font-light leading-relaxed">
           Here are some of the technologies I work with.
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7">
+        <div className="flex flex-wrap justify-center gap-7">
           <TechStackIcon />
         </div>
         <p className="text-lg text-muted-foreground mt-8 font-poppins font-light">
