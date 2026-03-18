@@ -6,7 +6,7 @@ const TechStackSection = () => {
       id="techstack"
       className="static min-h-screen flex items-center justify-center bg-background"
     >
-      <div className="text-center max-w-4xl flex flex-col mx-auto px-6 gap-6">
+      <div className="text-center max-w-4xl flex flex-col mx-auto px-4 sm:px-6 gap-6 py-16 md:py-0">
         <h2 className="text-3xl md:text-5xl font-light text-foreground font-montserrat tracking-tight">
           My Tech Stack
         </h2>

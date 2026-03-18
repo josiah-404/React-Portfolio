@@ -45,9 +45,9 @@ export default function ExperienceSection() {
       id="experience"
       className="min-h-screen flex items-center justify-center bg-background"
     >
-      <div className="max-w-4xl mx-auto px-6 py-20 w-full ">
-        <div className="text-center mb-20">
-          <h2 className="text-5xl md:text-6xl font-light text-foreground mb-8 font-montserrat tracking-tight">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-16 md:py-20 w-full ">
+        <div className="text-center mb-12 md:mb-20">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-foreground mb-8 font-montserrat tracking-tight">
             My Experience
           </h2>
           <div className="w-16 h-px bg-foreground mx-auto mb-8"></div>
@@ -58,24 +58,24 @@ export default function ExperienceSection() {
 
         <div className="relative w-full">
           {/* Timeline line */}
-          <div className="absolute left-8 top-0 bottom-0 w-px bg-border"></div>
+          <div className="absolute left-4 sm:left-8 top-0 bottom-0 w-px bg-border"></div>
 
           {experiences.map((experience) => (
             <div
               key={experience.id}
-              className="relative flex items-start mb-16 last:mb-0"
+              className="relative flex items-start mb-12 md:mb-16 last:mb-0"
             >
               {/* Timeline dot */}
-              <div className="absolute left-6 w-4 h-4 bg-foreground rounded-full border-4 border-background z-10"></div>
+              <div className="absolute left-[10px] sm:left-6 w-4 h-4 bg-foreground rounded-full border-4 border-background z-10"></div>
 
               {/* Content */}
-              <div className="ml-20 flex-1">
+              <div className="ml-12 sm:ml-20 flex-1">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                   <div>
-                    <h3 className="text-2xl font-medium text-foreground mb-1 font-montserrat">
+                    <h3 className="text-xl sm:text-2xl font-medium text-foreground mb-1 font-montserrat">
                       {experience.title}
                     </h3>
-                    <h4 className="text-xl text-muted-foreground font-montserrat font-light">
+                    <h4 className="text-lg sm:text-xl text-muted-foreground font-montserrat font-light">
                       {experience.company}
                     </h4>
                   </div>

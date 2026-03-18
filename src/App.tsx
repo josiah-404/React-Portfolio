@@ -12,7 +12,7 @@ export const App = () => {
       <div className="min-h-screen bg-gray-50">
         <Navigation />
 
-        <main>
+        <main className="pt-14 pb-20 lg:pt-0 lg:pb-0">
           <HeroSection />
           <AboutSection />
           <ExperienceSection />

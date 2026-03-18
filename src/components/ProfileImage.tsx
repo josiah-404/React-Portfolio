@@ -20,7 +20,7 @@ export default function ProfileImageComponent() {
   }, []);
 
   return (
-    <div className="relative flex items-center justify-center">
+    <div className="relative flex items-center justify-center scale-75 sm:scale-90 md:scale-100">
       {/* Geometric Background Elements */}
       <div
         className={`absolute w-96 h-96 opacity-10 transition-all duration-1000 ${

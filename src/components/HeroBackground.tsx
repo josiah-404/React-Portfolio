@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 
 export default function HeroBackground({ children }: React.PropsWithChildren) {
   return (
-    <div className="relative flex h-[50rem] w-full items-center justify-center bg-background dark:bg-background">
+    <div className="relative flex min-h-screen w-full items-center justify-center bg-background dark:bg-background">
       <div
         className={cn(
           "absolute inset-0 ",

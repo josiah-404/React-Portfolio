@@ -77,7 +77,7 @@ export const AnimatedTooltip = ({
           </AnimatePresence>
           <section
             onMouseMove={handleMouseMove}
-            className="!m-0 h-25 w-25 p-4 rounded-xl text-accent-foreground/60 hover:text-accent-foreground flex justify-center items-center border-1 hover:bg-accent/40 dark:border-accent object-cover object-top  transition duration-500 group-hover:z-30 group-hover:scale-105"
+            className="!m-0 h-20 w-20 sm:h-25 sm:w-25 p-3 sm:p-4 rounded-xl text-accent-foreground/60 hover:text-accent-foreground flex justify-center items-center border-1 hover:bg-accent/40 dark:border-accent object-cover object-top  transition duration-500 group-hover:z-30 group-hover:scale-105"
           >
             {item.image}
           </section>

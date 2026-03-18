@@ -48,7 +48,7 @@ export default function Navigation() {
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Check initial position
+    handleScroll();
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -72,7 +72,20 @@ export default function Navigation() {
 
   return (
     <TooltipProvider>
-      <nav className="fixed left-6 top-1/2 transform -translate-y-1/2 z-50">
+      {/* Mobile/Tablet top bar */}
+      <div className="lg:hidden fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border flex items-center justify-between px-4 py-2">
+        <div className="flex items-center justify-center w-10 h-10 rounded-full overflow-hidden">
+          <img
+            src={theme === "dark" ? "/Dark Logo.png" : "/Light Logo.png"}
+            alt="Logo"
+            className="rounded-full w-8 h-8 object-cover"
+          />
+        </div>
+        <ModeToggle />
+      </div>
+
+      {/* Desktop sidebar nav */}
+      <nav className="hidden lg:block fixed left-6 top-1/2 transform -translate-y-1/2 z-50">
         <div className="flex flex-col items-center ">
           <span className="mb-4 flex flex-col items-center justify-center gap-3">
             <div className="relative flex items-center justify-center w-12 h-12 rounded-full overflow-hidden">
@@ -98,6 +111,27 @@ export default function Navigation() {
                 <div className="w-0.5 h-8 bg-gray-300"></div>
               )}
             </div>
+          ))}
+        </div>
+      </nav>
+
+      {/* Mobile/Tablet bottom nav */}
+      <nav className="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-t border-border">
+        <div className="flex items-center justify-around py-2 px-2">
+          {NavigationList.map((item) => (
+            <a
+              key={item.name}
+              href={item.href}
+              onClick={(e) => handleNavClick(e, item.href)}
+              className={`flex flex-col items-center gap-0.5 px-3 py-1.5 rounded-xl transition-all duration-300 ${
+                activeSection === item.href.substring(1)
+                  ? "text-primary bg-primary/10"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
+            >
+              <span className="text-xl">{item.icon}</span>
+              <span className="text-[10px] font-medium">{item.name}</span>
+            </a>
           ))}
         </div>
       </nav>

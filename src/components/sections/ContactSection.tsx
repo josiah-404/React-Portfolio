@@ -4,9 +4,9 @@ const ContactSection = () => {
   return (
     <section
       id="contact"
-      className="flex flex-col items-center justify-center p-8 bg-background min-h-screen"
+      className="flex flex-col items-center justify-center px-4 sm:px-8 py-16 bg-background min-h-screen"
     >
-      <div className="flex flex-col items-center max-w-4xl mx-auto px-6 text-center">
+      <div className="flex flex-col items-center max-w-4xl mx-auto px-0 sm:px-6 text-center w-full">
         <h2 className="text-3xl md:text-5xl font-light text-foreground font-montserrat tracking-tight mb-6 ">
           Get in Touch
         </h2>
